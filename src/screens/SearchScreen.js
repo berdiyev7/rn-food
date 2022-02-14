@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import ResultList from '../components/ResultList';
 import SearchBar from '../components/SearchBar';
 import useResult from '../hooks/useResult';
 
@@ -16,13 +17,17 @@ const SearchScreen = () => {
          />
          {errorMessage ? <Text>{errorMessage}</Text> : null}
          <Text>We have found {result.length} results</Text>
+         <ResultList title='Cost Effective' />
+         <ResultList title='Bit Pricer' />
+         <ResultList title='Big Spender' />
       </View>
    )
 }
 
 const styles = StyleSheet.create({
    searchview: {
-      backgroundColor: '#fff'
+      backgroundColor: '#fff',
+      flex: 1
    }
 })
 export default SearchScreen;
