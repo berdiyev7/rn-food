@@ -3,7 +3,7 @@ import React from 'react'
 
 const ResultDetail = ({ result }) => {
    return (
-      <View styles={styles.container}>
+      <View style={styles.container}>
          <Image
             style={styles.image}
             source={{ uri: result.image_url }}
@@ -20,7 +20,8 @@ export default ResultDetail;
 
 const styles = StyleSheet.create({
    container: {
-      marginLeft: 20
+      paddingRight: 20
+
    },
    image: {
       width: 250,
