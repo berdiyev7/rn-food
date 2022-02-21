@@ -6,7 +6,7 @@ const ResultShowScreen = ({ navigation }) => {
    const [res, setRes] = useState(null);
    const id = navigation.getParam('id');
 
-   const getResult = async (id) => {
+   const getResult = async id => {
       const response = await yelp.get(`/${id}`);
       setRes(response.data);
    };
@@ -21,7 +21,7 @@ const ResultShowScreen = ({ navigation }) => {
 
    return (
       <View>
-         <Text>Res</Text>
+         <Text>{res.name}</Text>
       </View>
    )
 }

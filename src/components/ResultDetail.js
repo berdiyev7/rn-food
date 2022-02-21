@@ -16,7 +16,7 @@ const ResultDetail = ({ result }) => {
    )
 }
 
-export default ResultDetail;
+
 
 const styles = StyleSheet.create({
    container: {
@@ -34,4 +34,6 @@ const styles = StyleSheet.create({
       marginTop: 10,
       marginBottom: 5
    }
-})
+});
+
+export default ResultDetail;
